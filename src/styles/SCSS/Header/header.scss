@@ -1,0 +1,130 @@
+@mixin white-circle {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+@mixin red-circle {
+    background-color: #FF0037;
+    height: 35.19px;
+    width: 35.19px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+@mixin div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollBarStyle{
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background:#FFFFFF;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #DDDDDD;
+        
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a3a1a1;
+    }
+
+}
+
+
+button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+header {
+    background-color: #FF0037;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Spartan", sans-serif;
+    font-weight: 400;
+    color: white;
+    height: 75px;
+
+    .logo {
+        margin: 16px 0px 0px 52px;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    p{
+        padding-top: 12px;   
+    }
+}
+
+.circle-bg {
+    @include white-circle();
+}
+
+.red-circle {
+    @include red-circle();
+}
+
+.icons {
+    background-color: #DE0030;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px transparent solid;
+}
+
+.darker-hover {
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    width: 75px;
+    background-color: #BC0029;
+    transition: 0.2s;
+    @include div-center()
+}
+
+.icon-style {
+    width: 75px;
+    @include div-center()
+}
+
+.logout {
+    @include div-center()
+}
+
+.logout button {
+    @include div-center()
+}

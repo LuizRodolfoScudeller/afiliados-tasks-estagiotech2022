@@ -1,0 +1,9 @@
+.buttons-pseudo-hover{
+    width: 194px;
+    &:hover{
+        opacity: .8;
+    };
+    &:active{
+        opacity: .7;
+    }
+}
