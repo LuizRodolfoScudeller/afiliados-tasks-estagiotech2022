@@ -1,13 +1,9 @@
-
-
 * {
     margin: 0;
-    font-family: 'Roboto';
     padding: 0;
     box-sizing: border-box;
 }
 
-h3, ul {
+h3 {
     margin: 0;
 }
-// adicionar variaveis de cor
