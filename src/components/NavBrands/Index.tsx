@@ -49,7 +49,7 @@ const NavBrands = () => {
 
                     <li>
                         <input  id="checkbox1" type="checkbox" />
-                            <label                    htmlFor="checkbox" >
+                            <label className="checkbox"  htmlFor="checkbox1" >
 
                                 <img src={IconAmericanas} alt="" />
 
@@ -58,7 +58,7 @@ const NavBrands = () => {
 
                     <li>
                         <input id="checkbox2" type="checkbox" />
-                            <label             onClick={ () => handleBrands("checkbox2")}    id="checkbox2"    className="checkbox2" htmlFor="checkbox">
+                            <label className="checkbox" htmlFor="checkbox2">
 
                                 <img src={IconAmericanasEmpresas} alt="" />
 
@@ -67,7 +67,7 @@ const NavBrands = () => {
 
                     <li>
                         <input id="checkbox3" type="checkbox" />
-                            <label                     className="checkbox3" htmlFor="checkbox">
+                            <label                     className="checkbox" htmlFor="checkbox3">
 
                                 <img src={IconSubmarino} alt="" />
 
@@ -76,7 +76,7 @@ const NavBrands = () => {
 
                     <li>
                         <input id="checkbox4" type="checkbox" />
-                            <label                     className="checkbox4" htmlFor="checkbox">
+                            <label                     className="checkbox" htmlFor="checkbox4">
 
                                 <img src={IconShoptime} alt="" />
 
@@ -85,7 +85,7 @@ const NavBrands = () => {
 
                     <li>
                         <input id="checkbox5" type="checkbox" />
-                            <label                     className="checkbox5" htmlFor="checkbox">
+                            <label                     className="checkbox" htmlFor="checkbox5">
 
                                 <img src={IconSouBarato} alt="" />
 
