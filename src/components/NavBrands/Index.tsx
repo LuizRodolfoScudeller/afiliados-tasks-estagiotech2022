@@ -30,30 +30,26 @@ const NavBrands = () => {
         <nav className="NavContainer">
             <div className="ContainerBrands">
                 <h3>Marca</h3>
-                        
+                                       
                 <ul className="Brands">
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
-
-                                <img src={IconAmericanas} alt="" />
-
+                        <input id="checkbox1" type="checkbox" checked />
+                            <label className="checkbox" htmlFor="checkbox1">
+                             <img src={IconAmericanas} alt="" />
                             </label>
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
-
-                                <img src={IconAmericanasEmpresas} alt="" />
-
-                            </label>
+                        <input id="checkbox2" type="checkbox"/>
+                        <label htmlFor="checkbox2" className="checkbox">
+                            <img  src={IconAmericanasEmpresas} alt="" />
+                        </label>
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox3" type="checkbox" />
+                            <label                     className="checkbox" htmlFor="checkbox3">
 
                                 <img src={IconSubmarino} alt="" />
 
@@ -61,8 +57,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox4" type="checkbox" />
+                            <label                     className="checkbox" htmlFor="checkbox4">
 
                                 <img src={IconShoptime} alt="" />
 
@@ -70,8 +66,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox5" type="checkbox" />
+                            <label                     className="checkbox" htmlFor="checkbox5">
 
                                 <img src={IconSouBarato} alt="" />
 

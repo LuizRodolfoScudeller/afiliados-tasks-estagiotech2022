@@ -89,7 +89,7 @@
     margin-bottom: 9px;
 }
 
-input[type="checkbox"][id^="checkbox1"] {
+input[type="checkbox"][id^="checkbox"] {
     display: none;
   }
 
@@ -100,7 +100,7 @@ input[type="checkbox"][id^="checkbox1"] {
 }
 
 .checkbox{
-    /* opacity: 0.3; */
+    opacity: 0.3;
     cursor: pointer;
     transition: 0.3s;
 }
