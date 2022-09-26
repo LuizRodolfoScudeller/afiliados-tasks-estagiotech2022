@@ -5,7 +5,6 @@ import GenerateReportButton from "../GenerateReportButton";
 
 // Arquivo Css
 import "./styled.css"
-
 // Icones SVG
 import IconAmericanas from "./assets/icone-americanas.svg"
 import IconAmericanasEmpresas from "./assets/icone-americanas-empresas.svg"
@@ -24,7 +23,22 @@ const handleChange = (value: string) => {
   console.log(`selected ${value}`);
 };
 
+
+
 const NavBrands = () => {
+
+    function handleBrands(brand){
+        console.log("entrei")
+        console.log(brand)
+        console.log(typeof brand)
+        const element = document.getElementById(brand)
+        console.log(element)
+        if(element){
+            console.log('entrei no element')
+            element.style.border = '1px solid red'
+            element.style.opacity = '1';
+        }
+    }
        
     return (
         <nav className="NavContainer">
@@ -34,8 +48,8 @@ const NavBrands = () => {
                 <ul className="Brands">
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input  id="checkbox1" type="checkbox" />
+                            <label                    htmlFor="checkbox" >
 
                                 <img src={IconAmericanas} alt="" />
 
@@ -43,8 +57,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox2" type="checkbox" />
+                            <label             onClick={ () => handleBrands("checkbox2")}    id="checkbox2"    className="checkbox2" htmlFor="checkbox">
 
                                 <img src={IconAmericanasEmpresas} alt="" />
 
@@ -52,8 +66,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox3" type="checkbox" />
+                            <label                     className="checkbox3" htmlFor="checkbox">
 
                                 <img src={IconSubmarino} alt="" />
 
@@ -61,8 +75,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox4" type="checkbox" />
+                            <label                     className="checkbox4" htmlFor="checkbox">
 
                                 <img src={IconShoptime} alt="" />
 
@@ -70,8 +84,8 @@ const NavBrands = () => {
                     </li>
 
                     <li>
-                        <input id="checkbox1" type="checkbox" />
-                            <label                     className="checkbox" htmlFor="checkbox">
+                        <input id="checkbox5" type="checkbox" />
+                            <label                     className="checkbox5" htmlFor="checkbox">
 
                                 <img src={IconSouBarato} alt="" />
 
@@ -105,7 +119,7 @@ const NavBrands = () => {
                 <img src={ArrowRight} alt="Seta-para-esquerda" />
             </div>
             <div className="FinalDate">
-                <h3 className="titleInput" >Data do Pedido Inicial</h3>
+                <h3 className="titleInput" >Data do Pedido Final</h3>
                 <Space>
                     <DatePicker className="inputAntd" placeholder="Insira a data final" format={dateFormatList} />
                 </Space>

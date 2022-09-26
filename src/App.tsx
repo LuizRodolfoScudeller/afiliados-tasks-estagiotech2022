@@ -6,6 +6,8 @@ import 'antd/dist/antd.css';
 
 import CheckOrdersButton from "./components/CheckOrdersButton";
 import NavBrands from "./components/NavBrands/Index";
+import SummaryResults from "./components/SummaryResults";
+
 
 import UsersTable from "./components/UsersTable";
 import AskForCheckButton from "./components/AskForCheckButton";
@@ -18,7 +20,8 @@ function search() {
       <Header />
       <UsersTable />
       <SearchBar />
-      <NavBrands/>  
+      <NavBrands />  
+      <SummaryResults />
       <CheckOrdersButton />
       <AskForCheckButton/>
     </>

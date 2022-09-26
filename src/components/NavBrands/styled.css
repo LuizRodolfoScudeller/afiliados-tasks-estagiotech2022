@@ -28,11 +28,11 @@
     column-gap: 18px;
 }
 
-.Brands li{
+/* .Brands li{
     list-style: none;
     display: inline-block;
     cursor: pointer;
-}
+} */
 
 .Allbrands{
     display: flex;
@@ -89,19 +89,27 @@
     margin-bottom: 9px;
 }
 
-input[type="checkbox"][id^="checkbox1"] {
-    display: none;
-  }
 
-:checked+.checkbox{
-    opacity: 1;
-    cursor: pointer;
-    transition: 0.3s;
+.Brands>[type=checkbox] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
-.checkbox{
-    /* opacity: 0.3; */
+/* IMAGE STYLES */
+.Brands>[type=checkbox] + img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    opacity: 0.2;
 }
 
+/* CHECKED STYLES */
+.Brands>[type=checkbox]:checked + img {
+    padding: 1px;
+    opacity: 0.3;
+}

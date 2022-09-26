@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Spartan';
+    src: url('../../styles/Font/spartan-cufonfonts/Spartan-Regular.ttf');
+}
+
+.mainContainer{
+    background-color: #F2F2F2;
+    padding-top: 29px;
+}
+
+.chartContainer{
+    padding: 0 25px;
+    margin: 0 auto;
+    max-width: 1435px;
+}
+
+.recharts-text.recharts-label{
+    background-color: blue;
+}
+
+.title {
+    margin-bottom: 14px;
+    width: 300px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #ABABAB;   
+}
+
+.gmv{
+    color: #000000;
+    font-family: inherit;
+}
+
+.sales{
+    font-family: inherit;
+    color: #FF0037;
+}
+
+.listBrands{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 300px;
+    column-gap: 15px;
+    list-style: none;
+}
+
+.listBrands li{
+    display: inline-block;
+}
+
+.listBrands li img{
+    max-height: 100%;
+    margin-right: 6px;
+}
+
+.axisIcons, .axisIconsHour{
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 1355px;
+    padding-right: 6px;
+}
+
+.axisIcons {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 11px;
+}
+
+.axisIcons li img{
+    height: 15px;
+    width: 15px;
+}
+
+.axisIconsHour{
+    padding-bottom: 44px;
+}
+
+#text{
+    border:5px solid #FFFFFF;
+    padding: 10px;
+}
+
