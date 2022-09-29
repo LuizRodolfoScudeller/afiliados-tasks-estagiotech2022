@@ -173,8 +173,8 @@ function SummaryResults() {
 
 
   return (
-    <div class="mainContainer">
-      <div class="chartContainer">
+    <div className="mainContainer">
+      <div className="chartContainer">
       <h1 className='title'><span className='gmv'>GMV</span> X <span className='sales'>VENDAS D-364</span></h1>
       <ul className='listBrands'>
         <li><img src={CircleBlack} alt="" /> GMV</li>
