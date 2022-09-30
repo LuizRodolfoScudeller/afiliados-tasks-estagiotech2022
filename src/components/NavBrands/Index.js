@@ -55,12 +55,11 @@ const NavBrands = () => {
     
     const handleBrands = (value) => {
         return (event) => {
-            const validator = brand.some((brand) => brand === value) === true ? brand.splice(brand.indexOf(value), 1) : brand.push(value) 
-            console.log(validator)
+            brand.some((brand) => brand === value) === true ? brand.splice(brand.indexOf(value), 1) : brand.push(value) 
         }
     }
     
-    const arrayData = new Array
+    const arrayData = new Array()
     
     arrayData.unshift(brand)
 
