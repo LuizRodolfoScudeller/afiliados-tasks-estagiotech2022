@@ -51,6 +51,7 @@ const NavBrands = () => {
 
     // Logica para retornar o nome da marca
 
+    // eslint-disable-next-line no-unused-vars
     const {brand, setBrand} = useBrand()
     
     const handleBrands = (value) => {
@@ -59,7 +60,7 @@ const NavBrands = () => {
         }
     }
     
-    const arrayData = new Array()
+    const arrayData = []
     
     arrayData.unshift(brand)
 
