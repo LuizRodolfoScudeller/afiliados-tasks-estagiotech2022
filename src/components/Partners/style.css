@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Spartan";
+  src: url("../../styles/Font/spartan-cufonfonts/Spartan-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Spartan-Bold";
+  src: url("../../styles/Font/spartan-cufonfonts/Spartan-Bold.ttf");
+}
+
+.mainContainers {
+  background-color: #fff;
+  padding: 29px 0 32px;
+  margin: 0 auto;
+  max-width: 1435px;
+}
+
+.Title-Parceiros h1 {
+  font-family: "Spartan-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #ff0037;
+}
+
+.Filter img {
+  display: flex;
+}

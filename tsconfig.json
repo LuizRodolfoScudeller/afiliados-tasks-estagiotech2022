@@ -26,5 +26,6 @@
   },
   "include": [
     "src/@types/assets/index.d.ts",
+    "./custom.d.ts",
   ]
 }

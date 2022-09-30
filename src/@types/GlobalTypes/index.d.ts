@@ -5,6 +5,8 @@ export type TypeStoreContextOBJ = {
     setNotification: any;
     cloud: React.ReactNode;
     setCloud: any;
+    brand: Array;
+    setBrand: any;
   };
 
 export type TypeDownloadContent = {
