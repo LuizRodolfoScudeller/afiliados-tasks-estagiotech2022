@@ -53,13 +53,13 @@ const UsersTable: React.FC = () => {
 
   return (
     <>
-      <Table loading={loading} dataSource={data} pagination={false} >
+      {/* <Table loading={loading} dataSource={data} pagination={false} >
         <Column title="ID" dataIndex="id" key="id" />
         <Column title="Nome" dataIndex="name" key="id" />
         <Column title="Idade" dataIndex="idade" key="id" />
       </Table>
       <Pagination showSizeChanger={false} pageSize={limit} total={totalPages}/>
-      {/* <Pagination showSizeChanger={false} pageSize={limit} total={totalPages} onChange={(page) => {fetchData(page)}} /> */}
+      <Pagination showSizeChanger={false} pageSize={limit} total={totalPages} onChange={(page) => {fetchData(page)}} /> */}
     </>
   );
 };

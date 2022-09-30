@@ -3,6 +3,7 @@ import { Button, Input } from "antd";
 import 'antd/dist/antd.css';
 import * as CSS from 'csstype'
 import { searchIconSVG } from "../assets/icons/iconsSVG";
+import '../styles/StyledSearch.css'
 
 const searchBarStyle: CSS.Properties = {
     borderRadius: '28px 0px 0px 28px',
@@ -15,13 +16,15 @@ const searchButtonStyle: CSS.Properties = {
     backgroundColor: '#FF0037',
     border: 'none'
 }
+
 const SearchBar=()=>{
+
     return(
         <div className="site-input-group-wrapper">
-        <Input.Group size="default" style={{width: '500px', display: 'flex'}}>
-            <Input status="error" style={searchBarStyle} prefix={searchIconSVG()} placeholder="Digite sua busca aqui" />
-            <Button style={searchButtonStyle} type="primary" >BUSCAR</Button>
-        </Input.Group>
+            <Input.Group size="default" style={{width: '500px', display: 'flex'}}>
+                <Input status="error" style={searchBarStyle} prefix={searchIconSVG()} placeholder="Digite sua busca aqui" />
+                <Button style={searchButtonStyle} type="primary" >BUSCAR</Button>
+            </Input.Group>
         </div>
         )
 };
